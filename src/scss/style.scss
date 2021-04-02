@@ -1,0 +1,63 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import CoreUI styles
+@import "~@coreui/coreui/scss/coreui.scss";
+
+// Some temp fixes
+@import "fixes";
+
+// If you want to add something do it here
+@import "custom";
+
+.listTable {
+  tr:nth-child(odd) {
+    background: rgb(187, 206, 223) !important;
+  }
+
+  .tr:nth-child(even) {
+    background: rgba(231, 235, 238, 0.9) !important;
+  }
+
+  // tr:nth-child(even):hover {
+  //   background: rgb(0, 190, 214) !important;
+  //   color: white;
+  // }
+  // tr:nth-child(odd):hover {
+  //   background: rgb(0, 190, 214) !important;
+  //   color: white;
+  // }
+  .ant-table-thead > tr > th {
+    background: rgb(177, 179, 180) !important;
+  }
+  .ant-table-tbody > tr.ant-table-row:hover > td {
+    background: rgb(0, 190, 214) !important;
+    color: black;
+  }
+}
+
+.editingTable {
+  // tr:nth-child(odd) {
+  //   background: #dceaf742 !important;
+  // }
+
+  tr {
+    background: #dceaf742 !important;
+  }
+
+  // tr:nth-child(even):hover {
+  //   background: #dceaf742 !important;
+  //   color: white;
+  // }
+  // tr:nth-child(odd):hover {
+  //   background: rgb(220, 234, 247) !important;
+  //   color: white;
+  // }
+  .ant-table-thead > tr > th {
+    background: rgb(177, 179, 180) !important;
+  }
+  .ant-table-tbody > tr.ant-table-row:hover > td {
+    background: #dceaf742  !important;
+    color:black;
+  }
+}
